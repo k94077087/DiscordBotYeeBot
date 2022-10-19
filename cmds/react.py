@@ -4,7 +4,7 @@ from core.classes import Cog_Extension
 import json
 import random
 
-with open("discord_bot_YeeBot\setting.json",'r',encoding = 'utf_8') as jFile:
+with open("setting.json",'r',encoding = 'utf_8') as jFile:
     jData = json.load(jFile)
 
 class React(Cog_Extension):

@@ -6,7 +6,7 @@ import os
 import asyncio
 
 #開json檔
-with open("discord_bot_YeeBot\setting.json",'r',encoding = 'utf_8') as jFile:
+with open("setting.json",'r',encoding = 'utf_8') as jFile:
     jData = json.load(jFile)
 
 #discord 1.5 重大更新
@@ -20,7 +20,7 @@ async def on_ready():
 
 #load所有extensions到bot中
 async def load_extensions():
-    for Filename in os.listdir("discord_bot_YeeBot\cmds"):
+    for Filename in os.listdir("cmds"):
         if Filename.endswith(".py"):
             await bot.load_extension(f"cmds.{Filename[:-3]}")
 
