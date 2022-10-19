@@ -11,7 +11,7 @@ with open("setting.json",'r',encoding = 'utf_8') as jFile:
 
 #discord 1.5 重大更新
 intents = discord.Intents.all()
-bot = commands.Bot(command_prefix = 'Y ',intents = intents)
+bot = commands.Bot(command_prefix = 'y ',intents = intents)
 
 #開啟bot
 @bot.event
