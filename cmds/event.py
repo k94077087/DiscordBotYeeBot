@@ -28,30 +28,31 @@ class Event(Cog_Extension):
         if msg.content == "87" and msg.author != self.bot.user:#防止機器人回復自己的訊息
             await msg.channel.send("臭87")
             print(msg.Guild.id)
-        if "胖" in msg.content and msg.author != self.bot.user:#防止機器人回復自己的訊息
-            pic = discord.File(jData["baby_pic"][0])
-            await msg.channel.send(file = pic)
-        if msg.content == "親親" and msg.author != self.bot.user:#防止機器人回復自己的訊息
-            pic = discord.File(jData["baby_pic"][1])
-            await msg.channel.send(file = pic)
-        if msg.content == "寶寶抱抱" and msg.author != self.bot.user:#防止機器人回復自己的訊息
-            await msg.channel.send("我來了！(抱住)")
-            pic = discord.File(jData["baby_pic"][2])
-            await msg.channel.send(file = pic)
-        if msg.content == "想寶寶了" and msg.author != self.bot.user:#防止機器人回復自己的訊息
-            await msg.channel.send("我也想寶寶<3")
-            pic = discord.File(jData["baby_pic"][3])
-            await msg.channel.send(file = pic)
-        if "壞" in msg.content and msg.author != self.bot.user:#防止機器人回復自己的訊息
-            pic = discord.File(jData["baby_pic"][4])
-            await msg.channel.send(file = pic)
-        if "晚安" in msg.content and msg.author != self.bot.user:#防止機器人回復自己的訊息
-            pic = discord.File(jData["baby_pic"][5])
-            await msg.channel.send(file = pic)
-        if "寶寶" in msg.content and msg.author != self.bot.user:#防止機器人回復自己的訊息
-            pic = discord.File(jData["baby_pic"][6])
-            await msg.channel.send("咋咪啦寶寶<3")
-            await msg.channel.send(file = pic)
+        if msg.guild.id == int(jData["guild_id"]):
+            if "胖" in msg.content and msg.author != self.bot.user:#防止機器人回復自己的訊息
+                pic = discord.File(jData["baby_pic"][0])
+                await msg.channel.send(file = pic)
+            elif "親親" in msg.content and msg.author != self.bot.user:#防止機器人回復自己的訊息
+                pic = discord.File(jData["baby_pic"][1])
+                await msg.channel.send(file = pic)
+            elif "壞" in msg.content and msg.author != self.bot.user:#防止機器人回復自己的訊息
+                pic = discord.File(jData["baby_pic"][4])
+                await msg.channel.send(file = pic)
+            elif "晚安" in msg.content and msg.author != self.bot.user:#防止機器人回復自己的訊息
+                pic = discord.File(jData["baby_pic"][5])
+                await msg.channel.send(file = pic)
+            elif msg.content == "寶寶抱抱" and msg.author != self.bot.user:#防止機器人回復自己的訊息
+                await msg.channel.send("我來了！(抱住)")
+                pic = discord.File(jData["baby_pic"][2])
+                await msg.channel.send(file = pic)
+            elif msg.content == "想寶寶了" and msg.author != self.bot.user:#防止機器人回復自己的訊息
+                await msg.channel.send("我也想寶寶<3")
+                pic = discord.File(jData["baby_pic"][3])
+                await msg.channel.send(file = pic)
+            elif "寶寶" in msg.content and msg.author != self.bot.user:#防止機器人回復自己的訊息
+                pic = discord.File(jData["baby_pic"][6])
+                await msg.channel.send("咋咪啦寶寶<3")
+                await msg.channel.send(file = pic)
         
 
 #cog必加結尾
