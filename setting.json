@@ -1,0 +1,14 @@
+{
+    "TOKEN":"MTAzMTYxMzc5MzU0NzA3OTcxMA.G7P8rx.4gr_7_UjtTJoF0vw6uVstbcjYTqo1uHowKHc_k",
+    "Test_channel":"1031823034690064485",
+    "guild_id":"632832544194428948",
+    "PicPath":["D:\\GitHub\\DiscordBotYeeBot\\pics\\CuteCat.JPG","D:\\GitHub\\DiscordBotYeeBot\\pics\\ugly.JPG",
+                "D:\\GitHub\\DiscordBotYeeBot\\pics\\thx.JPG"],
+    "url_pic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-gnOGI2PBvXHDHXc9ACtwtxsmCTh5UQt7XA&usqp=CAU",
+                "https://static.popdaily.com.tw/u/202105/46ec8cb9-07dc-4650-951f-aabe903ce280.jpg",
+                "https://memeprod.ap-south-1.linodeobjects.com/user-template/11bd625f9735044381451d892bd8bdf8.png"],
+    "baby_pic":["D:\\GitHub\\DiscordBotYeeBot\\pics\\fat.gif","D:\\GitHub\\DiscordBotYeeBot\\pics\\kiss.gif",
+                "D:\\GitHub\\DiscordBotYeeBot\\pics\\hug.gif","D:\\GitHub\\DiscordBotYeeBot\\pics\\missyou.gif",
+                "D:\\GitHub\\DiscordBotYeeBot\\pics\\bad.gif","D:\\GitHub\\DiscordBotYeeBot\\pics\\goodnight.gif",
+                "D:\\GitHub\\DiscordBotYeeBot\\pics\\whathappen.gif"]
+}
